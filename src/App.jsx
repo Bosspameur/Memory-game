@@ -66,9 +66,9 @@ function App() {
     if(clicked.includes(pokemon)){
         if(score > bestScore){
           setBestScore(score);
-          setScore(0);
           setClicked([]);
         }
+        setScore(0);
     }
     else{
         setScore(score+1)
@@ -84,7 +84,7 @@ function App() {
         <p>Best Score: {bestScore}</p>
       </div>
       <div >
-        <ul className=' flex '>
+        <ul className=' flex'>
           {pokemons.map(pokemon => (
             <div key={pokemon.name} className=' p-5' onClick={() => {
               shuffleArray();
