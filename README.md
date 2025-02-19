@@ -1,1 +1,1 @@
-A Memory game with Pokémons made in React.
+A Memory game with Pokémons made using React and TailwindCSS.
